@@ -1,0 +1,97 @@
+body, .login div, .send-messages .center-send{
+    background-color: rgb(0, 0, 16);
+}
+
+.App {
+    display: flex;
+    justify-content: space-around;
+}
+
+* {
+    color: white;
+}
+
+.send-messages,
+.login {
+    margin-top: 150px;
+    background: linear-gradient(blue, lightblue);
+    padding: 2px;
+    width: fit-content;
+}
+
+.message,
+.login,
+.send-messages,
+.send-messages .center-send,
+.login div {
+    border-radius: 20px;
+}
+
+input, button, .message {
+    background: rgb(24, 24, 55);
+}
+
+.login div,
+.send-messages .center-send,
+.message {
+    padding: 50px;
+}
+
+input {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input, button {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login button:enabled, .send-messages .send:enabled {
+    animation: startbutton infinite 2s ease-in-out;
+}
+
+.login button:disabled, .send-messages .send:disabled {
+    opacity: .5;
+}
+
+.small {
+    font-size: x-small;
+}
+
+@keyframes startbutton {
+    0% {
+        box-shadow: 0px 0px 0px 0px lightblue;
+    }
+    50% {
+        box-shadow: 0px 0px 0px 2px lightblue;
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px lightblue;
+    }
+}
+
+.message {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, blue, lightblue);
+}
+
+.message .content {
+    padding-top: 50px;
+}
+
+.head {
+    font-size: small;
+}
